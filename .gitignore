@@ -13,3 +13,5 @@
 /tmp
 *.tgz
 .byebug_history
+.env
+*.sqlite3
