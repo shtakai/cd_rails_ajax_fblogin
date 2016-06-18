@@ -1,0 +1,13 @@
+<!-- landing page after successful login -->
+<div id="profile">
+  <h1>Welcome to your Rails APP</h1>
+  <h3>Your Facebook Information</h3>
+  <img src="https://graph.facebook.com/<%= @profile["id"] %>/picture" alt="picture">
+  <div class="profile_info">
+    <h2><%= @profile["first_name"] %> <%= @profile["last_name"] %></h2>
+    <h3>Facebook ID: <%= @profile["id"] %></h3>
+    <h3>Gender: <%= @profile["gender"] %></h3>
+  </div>
+</div>
+
+<a href="/facebook/logout">Logout</a>
